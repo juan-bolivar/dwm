@@ -439,7 +439,7 @@ swallow(Client *p, Client *c)
 
 	if (c->noswallow > 0 || c->isterminal)
 		return;
-	if (c->noswallow < 0 && !swallowfloating && c->isfloating)
+	if (c->noswallow < 0 && ! swallowfloating && c->isfloating)
 		return;
 
 	detach(c);
